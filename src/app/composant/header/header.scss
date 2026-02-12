@@ -1,0 +1,59 @@
+@use '../../../styles.scss' as *;
+
+.navbar-custom{
+    background-color: $bckgHeaderBox;
+}
+
+.logo-navbar {
+  width: auto;
+}
+.navbar-nav {
+  gap: 3rem;
+}
+
+.burger-zone {
+  display: flex;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.navbar-toggler {
+  border: none;        
+  background: transparent; 
+  box-shadow: none;    
+}
+
+.navbar-nav .nav-item.is-active .nav-link {
+  color: red !important;
+   }
+
+
+@media (max-width: 576px){
+    .logo-navbar {
+      height: 30px;
+      
+    }
+    .burger-zone{
+        input{
+            max-width: 100px;
+        }
+    }
+}
+@media (min-width: 992px) {
+  .logo-navbar {
+    height: 70px;
+  }
+}
+@media (min-width: 1400px) {
+
+  .burger-zone {
+    display: none !important;
+  }
+
+  .desktop-menu {
+    display: flex !important;
+  }
+
+}
