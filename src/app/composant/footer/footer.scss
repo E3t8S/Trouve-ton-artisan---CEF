@@ -1,0 +1,19 @@
+@use '../../../styles.scss' as *;
+
+.footer{
+    background-color: $bckgFooterCard;
+    color: white;
+    padding: 40px 24px 10px 24px;
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+.white-line {
+  border: none;
+  height: 2px;
+  background-color: white;
+  opacity: 1;
+}
+
